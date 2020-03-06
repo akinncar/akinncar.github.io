@@ -27,7 +27,7 @@
   ],
   "license": "MIT",
   "scripts": {
-    "deploy:github": "yarn build && node ./scripts/deploy-github",
+    "deploy:github": "yarn build && node ./src/scripts/deploy-github",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
