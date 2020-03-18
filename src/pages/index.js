@@ -1,11 +1,10 @@
-import React, { Fragment } from "react"
+import React from "react"
 // import { Link } from "gatsby"
 
 import SEO from "../components/Seo"
 import Nav from "../components/Nav"
 
-import {
-  GlobalStyle,
+import GlobalStyle, {
   Container,
   Name,
   Title,
