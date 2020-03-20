@@ -14,6 +14,18 @@ const GlobalStyle = createGlobalStyle`
     height: 100%;
   }
 
+  ul {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  button {
+    font-family: "Roboto", sans-serif;
+  }
+
   body {
     text-rendering: optimizeLegibility !important;
     -webkit-font-smothing: antialiased !important;
@@ -24,21 +36,77 @@ const GlobalStyle = createGlobalStyle`
 
 export const Container = styled.div`
   display: flex;
-  flex: 1;
-  margin-top: 60px;
-  /* background-color: #000; */
+  width: 100%;
+  flex-direction: column;
+  min-height: 100vh;
 `
 
-export const Medias = styled.section`
-  background-color: "red";
+export const Content = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 0 0 0;
+  flex-wrap: wrap;
+  min-height: calc(100vh - 80px);
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
+`
+
+export const Medias = styled.ul`
+  display: flex;
+  width: 120px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: -80px;
+
+  li {
+    margin-top: 5px;
+  }
+
+  @media (max-width: 800px) {
+    justify-content: center;
+    width: 100%;
+    flex-direction: row;
+    margin-top: 0;
+  }
+`
+
+export const MediaIcon = styled.img`
+  width: 30px;
+  height: 30px;
+  margin: 15px 15px;
 `
 
 export const Main = styled.section`
-  background-color: "red";
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 500px;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: -80px;
+
+  @media (max-width: 1290px) {
+    margin-top: 0px;
+  }
+
+  @media (max-width: 800px) {
+    padding-left: 40px;
+  }
 `
 
 export const Photo = styled.section`
-  background-color: "red";
+  display: flex;
+  flex: 1 1 665px;
+  align-items: flex-start;
+  width: 665px;
+`
+
+export const AkinnImage = styled.img`
+  object-fit: contain;
+  width: 100%;
 `
 
 export const Name = styled.h1`
