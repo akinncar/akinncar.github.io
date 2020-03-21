@@ -14,7 +14,7 @@ import GlobalStyle, {
   Medias,
   MediaIcon,
   Main,
-  Photo,
+  PhotoContainer,
   AkinnImage,
   Content,
 } from "./styles"
@@ -57,9 +57,9 @@ const IndexPage = () => (
           <Email>akinncar@hotmail.com</Email>
           <ButtonEmail>CLICK TO E-MAIL</ButtonEmail>
         </Main>
-        <Photo>
+        <PhotoContainer>
           <AkinnImage src={Akinn} alt="Akinn Rosa" />
-        </Photo>
+        </PhotoContainer>
       </Content>
     </Container>
     {/* <Link to="/page-2/">Go to page 2</Link> */}

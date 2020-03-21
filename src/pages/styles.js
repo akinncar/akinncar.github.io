@@ -83,30 +83,22 @@ export const MediaIcon = styled.img`
 export const Main = styled.section`
   display: flex;
   flex-direction: column;
-  flex: 1 1 500px;
+  flex: 1 1 600px;
   align-items: flex-start;
   justify-content: center;
   margin-top: -80px;
 
-  @media (max-width: 1290px) {
+  @media (max-width: 1270px) {
     margin-top: 0px;
   }
 
   @media (max-width: 800px) {
     padding-left: 40px;
   }
-`
 
-export const Photo = styled.section`
-  display: flex;
-  flex: 1 1 665px;
-  align-items: flex-start;
-  width: 665px;
-`
-
-export const AkinnImage = styled.img`
-  object-fit: contain;
-  width: 100%;
+  @media (max-width: 560px) {
+    flex: 1 1 400px;
+  }
 `
 
 export const Name = styled.h1`
@@ -122,6 +114,10 @@ export const Title = styled.h2`
   font-weight: 100;
   font-size: 68px;
   margin-bottom: 45px;
+
+  @media (max-width: 560px) {
+    font-size: 40px;
+  }
 `
 
 export const Text = styled.p`
@@ -129,6 +125,10 @@ export const Text = styled.p`
   font-weight: 100;
   font-size: 24px;
   margin-bottom: 45px;
+
+  @media (max-width: 560px) {
+    font-size: 16px;
+  }
 `
 
 export const Email = styled.p`
@@ -136,11 +136,30 @@ export const Email = styled.p`
   font-size: 22px;
   margin-bottom: 8px;
 `
-export const ButtonEmail = styled.p`
+export const ButtonEmail = styled.a`
   color: #333333;
   opacity: 50%;
   font-size: 14px;
   margin-bottom: 45px;
+`
+
+export const PhotoContainer = styled.section`
+  display: flex;
+  flex: 1 1 500px;
+  align-items: flex-end;
+
+  @media (max-width: 560px) {
+    flex: 1 1 300px;
+  }
+`
+
+export const AkinnImage = styled.img`
+  object-fit: contain;
+  flex: 1;
+
+  @media (max-width: 560px) {
+    width: 100%;
+  }
 `
 
 export default GlobalStyle
