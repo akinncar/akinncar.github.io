@@ -14,6 +14,8 @@ import GlobalStyle, {
   Medias,
   MediaIcon,
   Main,
+  Technologies,
+  TechnologyIcon,
   PhotoContainer,
   AkinnImage,
   Content,
@@ -23,6 +25,9 @@ import GithubIcon from "../images/github-brands.svg"
 import LinkedinIcon from "../images/linkedin-brands.svg"
 import DribbbleIcon from "../images/dribbble-brands.svg"
 import InstagramIcon from "../images/instagram-brands.svg"
+import ReactIcon from "../images/react-brands.svg"
+import AppleIcon from "../images/apple-brands.svg"
+import AndroidIcon from "../images/android-brands.svg"
 import Akinn from "../images/akinn.png"
 
 const IndexPage = () => (
@@ -35,16 +40,36 @@ const IndexPage = () => (
       <Content>
         <Medias>
           <li>
-            <MediaIcon src={GithubIcon} alt="Github Icon" />
+            <a href="https://github.com/akinncar" rel="noopener noreferrer">
+              <MediaIcon src={GithubIcon} alt="Github Icon" />
+            </a>
           </li>
           <li>
-            <MediaIcon src={LinkedinIcon} alt="Linkedin Icon" />
+            <a
+              href="https://www.linkedin.com/in/akinn-costa-de-aguiar-rosa-a56861163/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <MediaIcon src={LinkedinIcon} alt="Linkedin Icon" />
+            </a>
           </li>
           <li>
-            <MediaIcon src={DribbbleIcon} alt="Dribbble Icon" />
+            <a
+              href="https://dribbble.com/akinncar"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <MediaIcon src={DribbbleIcon} alt="Dribbble Icon" />
+            </a>
           </li>
           <li>
-            <MediaIcon src={InstagramIcon} alt="Instagram Icon" />
+            <a
+              href="https://instagram.com/akinncar"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <MediaIcon src={InstagramIcon} alt="Instagram Icon" />
+            </a>
           </li>
         </Medias>
         <Main>
@@ -54,8 +79,15 @@ const IndexPage = () => (
             In love with React and React Native, <br />
             working with Front-end and Mobile technologies.
           </Text>
-          <Email>akinncar@hotmail.com</Email>
-          <ButtonEmail>CLICK TO E-MAIL</ButtonEmail>
+          <Email href="mailto:akinncar@hotmail.com">akinncar@hotmail.com</Email>
+          <ButtonEmail href="mailto:akinncar@hotmail.com">
+            CLICK TO E-MAIL
+          </ButtonEmail>
+          <Technologies>
+            <TechnologyIcon src={ReactIcon} alt="React Icon" />
+            <TechnologyIcon src={AppleIcon} alt="Apple Icon" />
+            <TechnologyIcon src={AndroidIcon} alt="Android Icon" />
+          </Technologies>
         </Main>
         <PhotoContainer>
           <AkinnImage src={Akinn} alt="Akinn Rosa" />

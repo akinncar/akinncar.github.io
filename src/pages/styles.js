@@ -131,7 +131,7 @@ export const Text = styled.p`
   }
 `
 
-export const Email = styled.p`
+export const Email = styled.a`
   color: #ff006b;
   font-size: 22px;
   margin-bottom: 8px;
@@ -141,6 +141,16 @@ export const ButtonEmail = styled.a`
   opacity: 50%;
   font-size: 14px;
   margin-bottom: 45px;
+`
+
+export const Technologies = styled.div`
+  align-items: center;
+`
+
+export const TechnologyIcon = styled.img`
+  margin-right: 16px;
+  object-fit: contain;
+  width: 42px;
 `
 
 export const PhotoContainer = styled.section`
@@ -156,10 +166,8 @@ export const PhotoContainer = styled.section`
 export const AkinnImage = styled.img`
   object-fit: contain;
   flex: 1;
-
-  @media (max-width: 560px) {
-    width: 100%;
-  }
+  width: 100%;
+  max-height: 85%;
 `
 
 export default GlobalStyle
