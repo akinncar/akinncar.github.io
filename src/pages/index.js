@@ -40,7 +40,11 @@ const IndexPage = () => (
       <Content>
         <Medias>
           <li>
-            <a href="https://github.com/akinncar" rel="noopener noreferrer">
+            <a
+              href="https://github.com/akinncar"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <MediaIcon src={GithubIcon} alt="Github Icon" />
             </a>
           </li>
