@@ -88,7 +88,7 @@ export const Main = styled.section`
   justify-content: center;
   margin-top: -80px;
 
-  @media (max-width: 1270px) {
+  @media (max-width: 1170px) {
     margin-top: 0px;
   }
 
@@ -145,6 +145,7 @@ export const ButtonEmail = styled.a`
 
 export const Technologies = styled.div`
   align-items: center;
+  min-width: 400px;
 `
 
 export const TechnologyIcon = styled.img`
@@ -158,8 +159,9 @@ export const PhotoContainer = styled.section`
   flex: 1 1 450px;
   align-items: flex-end;
 
-  @media (max-width: 560px) {
+  @media (max-width: 800px) {
     flex: 1 1 300px;
+    max-width: 100%;
   }
 `
 
@@ -168,6 +170,11 @@ export const AkinnImage = styled.img`
   flex: 1;
   width: 100%;
   max-height: 85%;
+
+  @media (max-width: 800px) {
+    margin-top: 24px;
+    width: auto;
+  }
 `
 
 export default GlobalStyle
