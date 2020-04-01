@@ -155,7 +155,7 @@ export const TechnologyIcon = styled.img`
 
 export const PhotoContainer = styled.section`
   display: flex;
-  flex: 1 1 500px;
+  flex: 1 1 450px;
   align-items: flex-end;
 
   @media (max-width: 560px) {

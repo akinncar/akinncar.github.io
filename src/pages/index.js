@@ -78,7 +78,7 @@ const IndexPage = () => (
         </Medias>
         <Main>
           <Name>AKINN ROSA</Name>
-          <Title>Mobile Developer</Title>
+          <Title>Software Developer</Title>
           <Text>
             In love with React and React Native, <br />
             working with Front-end and Mobile technologies.

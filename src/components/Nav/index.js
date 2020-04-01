@@ -5,14 +5,17 @@ import { Container, NavItem } from "./styles"
 function Nav() {
   return (
     <Container>
-      <a href="">
-        <NavItem active={true}>HOME</NavItem>
+      <a>
+        {/* <NavItem active={true}>HOME</NavItem> */}
+        <NavItem active={false}></NavItem>
       </a>
-      <a href="">
-        <NavItem active={false}>ABOUT</NavItem>
+      <a>
+        {/* <NavItem active={false}>ABOUT</NavItem> */}
+        <NavItem active={false}></NavItem>
       </a>
-      <a href="">
-        <NavItem active={false}>CONTACTS</NavItem>
+      <a>
+        {/* <NavItem active={false}>CONTACTS</NavItem> */}
+        <NavItem active={false}></NavItem>
       </a>
     </Container>
   )
