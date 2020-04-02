@@ -39,6 +39,10 @@ export const Container = styled.div`
   width: 100%;
   flex-direction: column;
   min-height: 100vh;
+
+  @media (max-width: 800px) {
+    min-height: auto;
+  }
 `
 
 export const Content = styled.div`
@@ -160,7 +164,7 @@ export const PhotoContainer = styled.section`
   align-items: flex-end;
 
   @media (max-width: 800px) {
-    flex: 1 1 300px;
+    flex: 1;
     max-width: 100%;
   }
 `
@@ -173,7 +177,9 @@ export const AkinnImage = styled.img`
 
   @media (max-width: 800px) {
     margin-top: 24px;
+    max-width: 100%;
     width: auto;
+    height: auto;
   }
 `
 
